@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecofresh - Sustainable living Made Easy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .header {
+            display: flex;
+
+        }
+
+        .logo-pic {
+            height: 40px;
+            border-radius: 20%;
+        }
+
+        .logo-name {
+            display: inline;
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            margin-left: 50rem;
+
+        }
+
+        .nav-item {
+            padding-right: 20px;
+            font-family: "Montserrat", sans-serif;  
+            
+        }
+
+        .hero {
+            background-image: url(images/hero-background-image.webp);
+            height: 600px;
+            border-radius: 25px;
+        }
+
+        .hero-header {
+            margin: 0px;
+            padding: 30px;
+            font-size: 70px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .hero-body {
+            width: 50%;
+            margin-left: 20px;
+            margin-top: 50px;
+            font-size: 18px;
+            font-family: "Montserrat", sans-serif;  
+        }
+
+        .about-us {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .About-us-heading {
+            font-size: 50px;
+            font-family: "Montserrat", sans-serif
+        }
+
+        .about-us-para {
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+        }
+
+        .services {
+            padding-left: 40px;
+            padding-right: 40px;
+
+        }
+
+        .services-heading {
+            font-family: "Montserrat", sans-serif;
+            font-size: 50px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+
+        }
+
+        .services-para {
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+        }
+
+        .services-column {
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+        }
+
+        .image-gallery {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .images {
+            padding-top: 30px;
+            padding-left: 50px;
+        }
+
+        .image-gallery-heading {
+            font-family: "Montserrat", sans-serif;
+            font-size: 50px;
+        }
+
+        .img {
+            height: 320px;
+        }
+
+        .features {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .features-heading {
+            font-size: 50px;
+            font-family: "Montserrat", sans-serif;
+
+        }
+
+        .feature-card {
+            border: 3px solid black;
+            width: 25%;
+            border-radius: 1.1rem;
+            margin-right: 15px;
+        }
+
+        .feature-img {
+            width: 95%;
+            border-radius: 1.1rem;
+            padding: .5rem;
+            padding-left: .5rem;
+        }
+
+        .features-list {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .feature-data {
+            font-family: "Montserrat", sans-serif;
+            padding: .5rem;
+            margin: 0px;
+            margin-bottom: 1rem;
+        }
+
+        .testimonials {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .testimonials-heading {
+            font-family: "Montserrat", sans-serif;
+            font-size: 50px;
+        }
+
+        .testimonials-body {
+            font-family: "Montserrat", sans-serif;
+            font-size: 30px;
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .media-content {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .media-content-heading {
+            font-family: "Montserrat", sans-serif;
+            font-size: 50px;
+        }
+
+        .contact-form {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .contact-form-heading {
+            font-family: "Montserrat", sans-serif;
+            font-size: 50px;
+        }
+
+        .contact-list-item {
+            font-family: "Montserrat", sans-serif;
+            font-size: 25px;
+        }
+
+        .footer {
+            background-color: rgb(41, 40, 40);
+            border-radius: 1.2rem;
+        }
+
+        .footer-item {
+            color: white;
+            padding-left: 30px;
+            font-size: 30px;
+        }
+
+        .footer-end {
+            background-color: rgb(68, 68, 68);
+            color: white;
+            font-family: "Montserrat", sans-serif;
+
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Given below is the header tag - -->
+    <header class="header">
+        <!-- Given below contains the logo and name for the enterprise -> -->
+        <img src="images/log.webp" alt="" class="logo-pic">
+        <h2 class="logo-name">Ecofresh</h2>
+        <!-- Nav bar containing all the nav items arranged in an unordered list-> -->
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a style="text-decoration: none; color: black;" href="/home">Home</a></li>
+                <li class="nav-item"><a style="text-decoration: none; color: black;" href="/Services">Services</a></li>
+                <li class="nav-item"><a style="text-decoration: none; color: black;" href="/about-us">About Us</a></li>
+                <li class="nav-item"><a style="text-decoration: none; color: black;" href="/Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero tag containing a short description of the company--->
+    <div class="hero">
+        <h1 class="hero-header">Welcome to EcoFresh!</h1>
+        <p class="hero-body">At EcoFresh, we believe in a healthier planet and a healthier
+            you. Our mission is to provide sustainable, eco-friendly
+            products that <sub>make</sub> it easier for you to live a greener lifestyle
+            without compromising on quality. Whether you're looking for natural
+            home goods, eco-conscious personal care, or environmentally responsible
+            food options, EcoFresh offers a wide range of products designed with
+            both you and the <sup>planet</sup> in mind.
+
+            Join us in our journey towards a cleaner, fresher future - one product at a time!
+
+        </p>
+    </div>
+    <!-- tag containing a brief paragraph about the business--->
+    <div class="about-us">
+        <h2 class="About-us-heading">About us</h2>
+        <hr>
+        <p class="about-us-para">
+            Our mission is simple: to make <strong>healthy</strong> eating accessible and convenient while promoting
+            environmental
+            responsibility. We carefully source our ingredients from local, eco-conscious farms that prioritize
+            sustainable farming practices, ensuring that our food is not only good for you but also for the planet. By
+            choosing <em>EcoFresh</em>, you're making a conscious choice to support a healthier future for both yourself
+            and the
+            environment.
+
+            We are proud to offer a variety of products that cater to a wide range of dietary needs and preferences,
+            from gluten-free and vegan options to high-protein and low-carb meals. Whether you’re looking to boost your
+            energy, eat clean, or simply enjoy a nourishing meal, we have something for every lifestyle.
+            <br><br>
+            At EcoFresh, we don't just care about the food you eat—we care about the world you live in. We aim to reduce
+            waste through sustainable packaging and work tirelessly to ensure that every aspect of our business aligns
+            with our values of <em>sustainability, health, and community</em>.
+            <br><br>
+            Thank you for choosing <strong>EcoFresh</strong>, where every meal is a step towards a brighter, healthier
+            future for you and
+            the planet.
+        </p>
+        <!-- Services tag a list of all the services provided by the enterprise--->
+    </div>
+    <div class="services">
+        <h2 class="services-heading">Services</h2>
+        <hr>
+        <p class="services-para">At EcoFresh, we offer a wide range of healthy, organic food options designed to support
+            your well-being and
+            make
+            eating clean both easy and convenient. Below are some of the services we offer:
+        </p>
+
+        <table border="1" cellpadding="10">
+            <th>
+                <tr class="services-column">
+                    <th>Service Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </th>
+
+            <tr class="services-column">
+                <td class="services-table">Organic Meal Kits</td>
+                <td class="services-table">Pre-portioned, organic ingredients delivered to your door to make cooking
+                    healthy meals at home
+                    quick and easy.</td>
+                <td class="services-table">&#8377;300 per kit</td>
+            </tr>
+            <tr class="services-column">
+                <td class="services-table">Fresh Produce Delivery</td>
+                <td class="services-table">Fresh, locally-sourced fruits and vegetables delivered to your home every
+                    week. Perfect for your
+                    kitchen staples!</td>
+                <td class="services-table">&#8377;250 per week</td>
+            </tr>
+            <tr class="services-column">
+                <td class="services-table">Healthy Snacks</td>
+                <td class="services-table">Nutritious, plant-based snacks for on-the-go, including energy bars,
+                    dried fruits, nuts, and
+                    more.</td>
+                <td class="services-table">&#8377;450 per pack</td>
+            </tr>
+
+        </table>
+    </div>
+    <!-- given below is the photo gallery containing various images of the 
+     products and team members--->
+    <div class="image-gallery">
+        <h2 class="image-gallery-heading">Gallery</h2>
+        <hr>
+        <div class="images">
+            <img src="images/image-gallery1.PNG" alt="" class="img" style="padding: 8px; border-radius: 10% 0 0 0;">
+            <img src="images/image-gallery2.PNG" alt="" class="img" style="padding: 8px">
+            <img src="images/image-gallery3.PNG" alt="" class="img" style="padding: 8px; border-radius: 0 10% 0 0;">
+            <img src="images/image-gallery4.PNG" alt="" class="img"
+                style="padding: 8px;padding-left:20px; border-radius: 0 0 0 10% ;">
+            <img src="images/image-gallery5.PNG" alt="" class="img" style="padding: 8px; ">
+            <img src="images/image-gallery6.PNG" alt="" class="img" style="padding: 8px; border-radius: 0 0 10% 0;">
+        </div>
+    </div>
+    <!-- Given below is the list of various features displayed along with 
+     a image--->
+    <div class="features">
+        <h2 class="features-heading">Features</h2>
+        <hr>
+        <ul class="features-list">
+            <li class="feature-card"> <img src="images/features-image1.PNG" alt="Free Consultations" class="feature-img" ;" />
+                <br>
+                <p class="feature-data"><strong>Free Consultations</strong> <br> Our experts are here to provide you
+                    with personalized advice at no cost.</p>
+            </li>
+            <li class="feature-card"> <img src="images/features-image2.PNG" alt="24/7 Support"
+                    style="padding-left: 40px; padding-top: 50px;" />
+                <p class="feature-data" style="padding-top: 20px;"><strong>24/7 Support</strong> <br> We’re available
+                    around the clock to assist you with any questions or concerns.
+                </p>
+            </li>
+            <li class="feature-card"> <img src="images/features-image3.PNG" alt="Custom Solutions" class="feature-img"
+                    style="height: 340px; padding-left: 15px;" />
+                <p class="feature-data">
+                    <strong>Custom Solutions</strong> <br> Tailored services and products to fit your unique needs and
+                    preferences.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!-- Given below is a list of various customer-reviews -->
+    <div class="testimonials">
+        <h2 class="testimonials-heading">Customer Testimonials</h2>
+        <hr>
+        <blockquote class="testimonials-body">
+            <p>"Ecology has completely transformed the way I think
+                about food. Their meals are not only delicious but packed
+                with the nutrients my body craves. I feel more energetic
+                and healthy every day!"<br><br>
+                - Sarah L., Health Enthusiast</p>
+        </blockquote>
+
+        <blockquote class="testimonials-body">
+            <p>"As a busy professional, I love how easy it is to order
+                from Ecology and still enjoy wholesome, fresh meals. It's
+                the perfect balance of convenience and quality, and I don't
+                feel guilty eating their food." <br><br>
+                - James T., Busy Executive </p>
+        </blockquote>
+
+        <blockquote class="testimonials-body">
+            <p>"I’ve tried many healthy food options, but Ecology stands
+                out for its flavor and variety. I especially love their
+                plant-based meals—they’re so creative and satisfying. It’s
+                the perfect way to fuel my workouts."
+                - Maria D., Fitness Trainer</p>
+        </blockquote>
+    </div>
+    <div class="media-content">
+        <h2 class="media-content-heading">Media content</h2>
+        <hr>
+        <section id="youtube-video" style="padding-left: 350px;">
+            <h2>To know more watch this video-</h2>
+            <iframe width="640" height="360" src="media/video.mp4" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="contact-form">
+        <h2 class="contact-form-heading">Contact Us - Ecology for Healthy Foods</h2>
+        <hr>
+
+        <form class="contact-form" action="" method="">
+            <!-- Name Field --> <br><br>
+            <label for="name" class="contact-list-item">Full Name</label>
+            <input type="text" id="name" name="name" class="contact-list-item" required placeholder="Your Full Name">
+            &nbsp;
+            <!-- Email Field -->
+            <label for="email" class="contact-list-item">Email Address</label>
+            <input type="email" id="email" name="email" class="contact-list-item" required
+                placeholder="Your Email Address">
+            <br><br>
+            <!-- Mobile No. Field -->
+            <label for="mobile" class="contact-list-item">Mobile No. (10 digits only)</label>
+            <input type="text" id="mobile" name="mobile" class="contact-list-item" pattern="\d{10}" maxlength="10"
+                required placeholder="Your Mobile Number" title="Please enter a 10-digit number">
+            <br><br>
+            <!-- Message Field -->
+            <label for="message" class="contact-list-item">Message</label>
+            <textarea id="message" name="message" rows="1" class="contact-list-item" required
+                placeholder="Your Message"></textarea>
+            <br><br>
+            <!-- How did you hear about us? (Radio Buttons) -->
+            <label class="contact-list-item">How did you hear about Ecology for Healthy Foods?</label><br>
+            <input type="radio" class="contact-list-item" name="source" value="Internet">
+            <label for="internet" class="contact-list-item">Internet</label><br>
+
+            <input type="radio" name="source" value="Friend">
+            <label for="friend" class="contact-list-item">Friend</label><br>
+
+            <input type="radio" class="contact-list-item" name="source" value="Advertisement">
+            <label for="advertisement" class="contact-list-item">Advertisement</label>
+            <br><br>
+            <!-- Subscribe to Newsletter (Checkbox) -->
+            <input type="checkbox" name="Subscribe">
+            <label for="Subscribe" class="contact-list-item">Subscribe to our newsletter</label><br><br>
+            <!-- Select Service (Dropdown List) -->
+            <label for="service" class="contact-list-item">Select Your Interest</label>
+            <select id="service" name="service" required class="contact-list-item">
+                <option value="organic_foods" class="contact-list-item">Organic Foods</option>
+                <option value="meal_plans" class="contact-list-item">Healthy Meal Plans</option>
+                <option value="nutrition_advice" class="contact-list-item">Nutrition Advice</option>
+                <option value="other" class="contact-list-item">Other</option>
+            </select>
+            <br><br>
+            <!-- Submit Button -->
+            <button type="submit" class="contact-list-item">Submit</button>
+        </form>
+    </div><br><br><br><br><br>
+    <footer class="footer">
+        <div style="display: flex; padding-left: 80vh; padding-top: 40px;">
+            <a href="" class="footer-item"><i class="fa-brands fa-instagram"></i></a></p>
+            <a href="" class="footer-item"><i class="fa-brands fa-twitter"></i></a></p>
+            <a href="" class="footer-item"><i class="fa-brands fa-youtube"></a></i></p>
+            <a href="" class="footer-item"><i class="fa-solid fa-newspaper"></i></a></p>
+            <a href="" class="footer-item"><i class="fa-brands fa-facebook"></i></a></p>
+        </div>
+        <div class="footer-end">
+            Copyright @2024; &nbsp;&nbsp;Designed by DHAIRYA
+            </p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
